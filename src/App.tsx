@@ -8,6 +8,7 @@ import useData from "./sevices/useData";
 import { useEffect, useMemo, useState } from "react";
 import { DataResponse, FiltersProps } from "./props";
 import Charts from "./Charts";
+import icon from "./assets/icon.png";
 
 const App: React.FC = () => {
 	const [filters, setFilters] = useState<FiltersProps>({
@@ -65,7 +66,10 @@ const App: React.FC = () => {
 		<ThemeProvider theme={theme}>
 			<main>
 				<Container>
-					<Header>DASHBOARD - Indicadores por Países</Header>
+					<Header>
+						<img src={icon} width='40rem' height='40rem' alt='Chart Logo' />
+						DASHBOARD - Indicadores por Países
+					</Header>
 					<div style={{ display: "flex", flexDirection: "column", flex: "1" }}>
 						<Filters
 							setFilters={setFilters}

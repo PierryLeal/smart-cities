@@ -73,7 +73,7 @@ const Dropdown: React.FC<{
 			<InputLabel
 				id='demo-multiple-name-label'
 				size='small'
-				style={{ color: "#702de2" }}
+				style={{ color: "#b489ff" }}
 			>
 				{label}
 			</InputLabel>
@@ -86,7 +86,7 @@ const Dropdown: React.FC<{
 				input={<OutlinedInput label={label} />}
 				MenuProps={MenuProps}
 				size='small'
-				style={{ color: "#702de2" }}
+				style={{ color: "#b489ff" }}
 			>
 				{options.map((option) => (
 					<MenuItem

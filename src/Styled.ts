@@ -11,11 +11,13 @@ export const Container = styled.div`
 
 export const Header = styled.div`
 	display: flex;
+	align-items: center;
 	width: 100%;
 	height: auto;
 	font-weight: 700;
 	font-size: 2rem;
 	margin-bottom: 1rem;
+	gap: 1rem;
 `;
 
 export const Content = styled.div`

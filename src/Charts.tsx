@@ -1,7 +1,7 @@
 import { ChartBar } from "./Styled";
 
 import { BarChart } from "@mui/x-charts/BarChart";
-import { formatDataset, getGreaterItem } from "./funtions";
+import { formatDataset } from "./funtions";
 import { DataResponse } from "./props";
 import { Typography } from "@mui/material";
 

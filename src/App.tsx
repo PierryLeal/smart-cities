@@ -76,7 +76,6 @@ const App: React.FC = () => {
 							filters={filters}
 							countries={countries}
 							indicators={indicators}
-							years={years}
 						/>
 
 						<div
@@ -84,6 +83,7 @@ const App: React.FC = () => {
 								display: "flex",
 								flexDirection: "column",
 								gap: "1rem",
+								marginTop: "1rem",
 							}}
 						>
 							{data && data.map((x) => <Charts data={x} years={years} />)}

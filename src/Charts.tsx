@@ -23,7 +23,7 @@ const Charts: React.FC<{ data: DataResponse; years: string[] }> = ({
 			<Typography
 				fontWeight={700}
 				fontSize={"1.2rem"}
-				style={{ color: "#401885" }}
+				style={{ color: "#b489ff" }}
 			>
 				{data.indicador}
 			</Typography>

@@ -34,6 +34,30 @@ export const ChartBar = styled.div`
 	height: 25rem;
 	text-align: center;
 	margin-top: 1rem;
-	background-color: #dbc6ff;
 	border-radius: 1rem;
+
+	.MuiChartsLegend-series {
+		text {
+			fill: #ffffff !important;
+		}
+	}
+
+	.MuiChartsAxis-directionX {
+		color: red;
+		line {
+			stroke: #ffffff;
+		}
+		.MuiChartsAxis-tickLabel {
+			fill: #ffffff;
+		}
+	}
+	.MuiChartsAxis-directionY {
+		color: red;
+		line {
+			stroke: #ffffff;
+		}
+		.MuiChartsAxis-tickLabel {
+			fill: #ffffff;
+		}
+	}
 `;

@@ -12,8 +12,7 @@ const Filters: React.FC<{
 	filters: FiltersProps;
 	indicators: IndicatorsResponse[];
 	countries: CountriesResponse[];
-	years: string[];
-}> = ({ filters, setFilters, countries, indicators, years }) => {
+}> = ({ filters, setFilters, countries, indicators }) => {
 	const formatCountries = Array.from(
 		new Set(countries.map(({ nome }) => nome.abreviado))
 	);
@@ -36,14 +35,6 @@ const Filters: React.FC<{
 				options={Array.from(
 					new Set(indicators.map(({ indicador }) => indicador.split(" -")[0]))
 				)}
-			/>
-			<Dropdown
-				filters={filters}
-				setFilters={setFilters}
-				filterKey='years'
-				label='Anos'
-				disabled={years.length === 0}
-				options={years}
 			/>
 		</Selectors>
 	);
